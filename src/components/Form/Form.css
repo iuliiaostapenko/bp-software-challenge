@@ -1,0 +1,16 @@
+.form-input {
+  width: 200px;
+}
+
+.form-input:first-child {
+  float: left;
+}
+
+.form-input:last-child {
+  float: right;
+  margin-left: 5px;
+}
+
+.form-btn {
+  width: 100%;
+}

@@ -1,16 +1,37 @@
+form {
+  min-width: 100%;
+}
 .form-input {
-  width: 200px;
+  width: 100%;
 }
-
-.form-input:first-child {
-  float: left;
+.form-group {
+  display: block;
 }
-
-.form-input:last-child {
-  float: right;
-  margin-left: 5px;
+.form-group div {
+  margin: 0 0 10px;
 }
-
+.form-wrap {
+  width: 90%;
+}
 .form-btn {
   width: 100%;
 }
+@media (min-width: 480px) {
+  .form-wrap {
+    width: auto;
+    margin: 0 10px;
+  }
+  form {
+    min-width: 420px;
+  }
+  .form-group{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 5px;
+  }
+  .form-input {
+    width: 200px;
+  }
+}
+
+

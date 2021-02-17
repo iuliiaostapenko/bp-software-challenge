@@ -12,28 +12,36 @@ export default function Form() {
   }
 
   return (
-    <div>
-      <div>New Form</div>
-      <form className="form clearfix" onSubmit={onSubmit}>
-        <input
-          placeholder="First name"
-          name="firstName"
-          className="form-control form-input"
-          onChange={event => setFirstName(event.target.value)}
-        />
-        <input
-          placeholder="Last name"
-          name="lastName"
-          className="form-control form-input"
-          onChange={event => setLastName(event.target.value)}
-        />
-        <button
-          type="submit"
-          className="btn btn-primary form-btn"
-          onClick={onSubmit}
-        >
-          Save
-        </button>
+    <div className="form-wrap">
+      <h1>New Form</h1>
+      <form onSubmit={onSubmit}>
+        <div className="form-group">
+          <div>
+            <input
+              placeholder="First name"
+              name="firstName"
+              className="form-control form-input"
+              onChange={event => setFirstName(event.target.value)}
+            />
+          </div>
+          <div>
+            <input
+              placeholder="Last name"
+              name="lastName"
+              className="form-control form-input"
+              onChange={event => setLastName(event.target.value)}
+            />
+          </div>
+        </div>
+        <div className="form-group">
+          <button
+            type="submit"
+            className="btn btn-primary form-btn"
+            onClick={onSubmit}
+          >
+            Save
+          </button>
+        </div>
       </form>
     </div>
   );
